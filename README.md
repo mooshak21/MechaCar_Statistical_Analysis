@@ -26,28 +26,32 @@
 ## T-Tests on Suspension Coils
 ### All Three Lots
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Ttest.png)
-> Null Hypothesis: mean = 1500 / Alternative Hypothesis: mean ≠ 1500 -- Since the p value > alpha (0.06 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
+> Null Hypothesis: mean = 1500 | Alternative Hypothesis: mean ≠ 1500 -- Since the p value > alpha (0.06 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
 
 ### Lot 1
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Lot1.png)
-> Null Hypothesis: mean = 1500 / Alternative Hypothesis: mean ≠ 1500 -- Since the p value > alpha (1 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
+> Null Hypothesis: mean = 1500 | Alternative Hypothesis: mean ≠ 1500 -- Since the p value > alpha (1 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
 
 ### Lot 2
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Lot2.png)
-> Null Hypothesis: mean = 1500 / Alternative Hypothesis: mean ≠ 1500 -- Since the p value > alpha (0.61 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
+> Null Hypothesis: mean = 1500 | Alternative Hypothesis: mean ≠ 1500 -- Since the p value > alpha (0.61 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
 
 ### Lot 3
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Lot3.png)
-> Null Hypothesis: mean = 1500 / Alternative Hypothesis: mean ≠ 1500 -- Since the p value < alpha (0.04 < 0.05), we reject the null hypothesis affirming the alternative hypothesis. This means the true value of the mean is not 1500.
+> Null Hypothesis: mean = 1500 | Alternative Hypothesis: mean ≠ 1500 -- Since the p value < alpha (0.04 < 0.05), we reject the null hypothesis affirming the alternative hypothesis. This means the true value of the mean is not 1500.
 
-# Deliverable 4
+## Study Design: MechaCar vs Competition
+Consumers mostly want a car that has good gas mileage so we will focus on that for this study in relation to the user's maintenance costs. 
 
+- What metric or metrics are you going to test?
+>We would use the metric of the cost for maintenance repairs.
 
+- What is the null hypothesis or alternative hypothesis?
+>Null Hypothesis: The people that use their MechaCar 5 days a week will have a lower mainenance cost than those who drive competitors cars.
 
-In your README, create a subheading ## Study Design: MechaCar vs Competition.
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+- What statistical test would you use to test the hypothesis? And why?
+>We would use a 2 sample t-test to relate the costs between the MechaCar group and the non MechaCar group. Our main goal is to see if the cost for each are independent. 
+
+- What data is needed to run the statistical test?
+>The make and model of the car, days the car is used per week, and the cost of maintenance.
+
