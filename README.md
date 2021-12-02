@@ -26,27 +26,19 @@
 ## T-Tests on Suspension Coils
 ### All Three Lots
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Ttest.png)
-> Null Hypothesis: mean = 1500
-Alternative Hypothesis: mean ≠ 1500
-Since the p value > alpha (0.06 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
+> Null Hypothesis: mean = 1500 / Alternative Hypothesis: mean ≠ 1500 -- Since the p value > alpha (0.06 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
 
 ### Lot 1
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Lot1.png)
-> Null Hypothesis: mean = 1500
-Alternative Hypothesis: mean ≠ 1500
-Since the p value > alpha (1 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
+> Null Hypothesis: mean = 1500 / Alternative Hypothesis: mean ≠ 1500 -- Since the p value > alpha (1 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
 
 ### Lot 2
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Lot2.png)
-> Null Hypothesis: mean = 1500
-Alternative Hypothesis: mean ≠ 1500
-Since the p value > alpha (0.61 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
+> Null Hypothesis: mean = 1500 / Alternative Hypothesis: mean ≠ 1500 -- Since the p value > alpha (0.61 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
 
 ### Lot 3
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Lot3.png)
-> Null Hypothesis: mean = 1500
-Alternative Hypothesis: mean ≠ 1500
-Since the p value < alpha (0.04 < 0.05), we reject the null hypothesis affirming the alternative hypothesis. This means the true value of the mean is not 1500.
+> Null Hypothesis: mean = 1500 / Alternative Hypothesis: mean ≠ 1500 -- Since the p value < alpha (0.04 < 0.05), we reject the null hypothesis affirming the alternative hypothesis. This means the true value of the mean is not 1500.
 
 # Deliverable 4
 
