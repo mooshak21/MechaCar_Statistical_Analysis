@@ -6,7 +6,7 @@ library(ggplot2)
 car <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
 coil <- read.csv(file='Suspension_Coil.csv', check.names = F, stringsAsFactors = F)
 
-
+#-------------------------------------------------------------------------------------------------
 
 #Deliverable 1
 lin_reg <- lm(mpg~vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD, car)
@@ -34,6 +34,7 @@ summary(lin_reg)
 summary(lin_reg)$r.squared
 #0.7149033
 
+#-------------------------------------------------------------------------------------------------
 
 #Deliverable 2
 total_summary <- coil %>% summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))
@@ -45,3 +46,64 @@ lot_summary <- coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PS
 # Lot1               1500   1500     0.980      0.990
 # Lot2               1500.  1500     7.47       2.73 
 # Lot3               1496.  1498.    170.       13.0
+
+#-------------------------------------------------------------------------------------------------
+
+#Deliverable 3
+t.test(coil$PSI, mu = 1500)
+
+#         One Sample t-test
+# 
+# data:  coil$PSI
+# t = -1.8931, df = 149, p-value = 0.06028
+# alternative hypothesis: true mean is not equal to 1500
+# 95 percent confidence interval:
+#   1497.507 1500.053
+# sample estimates:
+#   mean of x 
+# 1498.78 
+
+lot1 = subset(coil, Manufacturing_Lot == 'Lot1')
+lot2 = subset(coil, Manufacturing_Lot == 'Lot2')
+lot3 = subset(coil, Manufacturing_Lot == 'Lot3')
+
+t.test(lot1$PSI, mu = 1500)
+
+#         One Sample t-test
+# 
+# data:  lot1$PSI
+# t = 0, df = 49, p-value = 1
+# alternative hypothesis: true mean is not equal to 1500
+# 95 percent confidence interval:
+#   1499.719 1500.281
+# sample estimates:
+#   mean of x 
+# 1500 
+
+
+t.test(lot2$PSI, mu = 1500)
+
+#         One Sample t-test
+# 
+# data:  lot2$PSI
+# t = 0.51745, df = 49, p-value = 0.6072
+# alternative hypothesis: true mean is not equal to 1500
+# 95 percent confidence interval:
+#   1499.423 1500.977
+# sample estimates:
+#   mean of x 
+# 1500.2 
+
+
+t.test(lot3$PSI, mu = 1500)
+
+#         One Sample t-test
+# 
+# data:  lot3$PSI
+# t = -2.0916, df = 49, p-value = 0.04168
+# alternative hypothesis: true mean is not equal to 1500
+# 95 percent confidence interval:
+#   1492.431 1499.849
+# sample estimates:
+#   mean of x 
+# 1496.14 
