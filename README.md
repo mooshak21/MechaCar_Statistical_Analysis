@@ -1,5 +1,3 @@
-# Overview
-
 ## Linear Regression to Predict MPG
 
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D1LinReg.png)
