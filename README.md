@@ -1,3 +1,5 @@
+# Overview
+
 ## Linear Regression to Predict MPG
 
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D1LinReg.png)
@@ -12,18 +14,39 @@
 >Using the R-Squared value of 0.7149, we can say that the linear model does in fact predict the MPG of the cars effectively. This means that approximately 71 out of 100 times the model would predict the MPG correctly. 
 
 ## Summary Statistics on Suspension Coils
-Total Summary
-![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D2TotalSummary.png)
+### Total Summary
+![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D2TotalSummary.png)  
 
-Lot Summary
+### Lot Summary
 ![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D2LotSummary.png)
 
 - The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 > The variance when looking at the total summary is 62.29 which meets the design specifications. When looking at the individual lot summaries, we get lot 1: 0.98, lot 2: 7.47, and lot 3: 170.29. Clearly, lot 1 and 2 meet the design specifications but the same cannot be said about lot 3 since it is above 100. 
 
-# Deliverable 3
+## T-Tests on Suspension Coils
+### All Three Lots
+![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Ttest.png)
+> Null Hypothesis: mean = 1500
+Alternative Hypothesis: mean ≠ 1500
+Since the p value > alpha (0.06 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
 
-In your README, create a subheading ## T-Tests on Suspension Coils, then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+### Lot 1
+![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Lot1.png)
+> Null Hypothesis: mean = 1500
+Alternative Hypothesis: mean ≠ 1500
+Since the p value > alpha (1 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
+
+### Lot 2
+![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Lot2.png)
+> Null Hypothesis: mean = 1500
+Alternative Hypothesis: mean ≠ 1500
+Since the p value > alpha (0.61 > 0.05), we fail to reject the null hypothesis. This means the true value of the mean could indeed be 1500.
+
+### Lot 3
+![](https://github.com/mooshak21/MechaCar_Statistical_Analysis/blob/main/Resources/D3Lot3.png)
+> Null Hypothesis: mean = 1500
+Alternative Hypothesis: mean ≠ 1500
+Since the p value < alpha (0.04 < 0.05), we reject the null hypothesis affirming the alternative hypothesis. This means the true value of the mean is not 1500.
 
 # Deliverable 4
 
